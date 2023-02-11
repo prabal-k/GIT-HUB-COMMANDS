@@ -13,6 +13,8 @@
 	
 	=> git push origin master						\\ TO PUSH THE FILE TO GITHUB AT LOCATION MASTER
 
+		=> (git pull origin master)
+
 
 2) GIT COMMAND FOR PULL OR TO ADD FROM REMOTE 
 
@@ -68,4 +70,4 @@
 										\\ it deletes the brach even if it is merged or not)
 	
 
-	---------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------------------------------
