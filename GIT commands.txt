@@ -41,3 +41,7 @@
 	#)IF YOU AGAIN WNAT TO GO TO THE NEWEST OR LATEST COMMIT OR STAGE
 	
 	git checkout <main/master>
+
+
+
+	--------------------------
