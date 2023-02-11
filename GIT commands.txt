@@ -1,0 +1,43 @@
+1)GIT COMMANDS FOR PUSH
+
+	git init                     					\\GIT INITIALIZE
+	git add .								\\To TAKE THE FILE TO STAGING AREA
+
+	(git rm --cached <filename>)					\\TO UNSELECT A PARTICULAR FILE TO UNSTAGE
+
+	git commit -m "msg"						\\TO MAKE READY FOR COMMIT
+
+	(git branch -M <main/master>)					\\ TO SHIFT FROM ONE BRANCH TO ANOTHER BRANCH
+
+	git remote add origin <link>
+	
+	git push origin master						\\ TO PUSH THE FILE TO GITHUB AT LOCATION MASTER
+
+
+2) GIT COMMAND FOR PULL OR TO ADD FROM REMOTE 
+
+	git clone <url>							\\TO PULL FROM REMOTE ORIGIN TO LAPTOP
+
+
+
+3)FOR GIT CONFIGURATION
+
+	git config --list
+
+	git config --global user.email "Email"
+	git config --global user.name "username"
+
+3)VIEW COMMIT HISTORY AND GO BACK TO PREVIOUS COMMIT (used to go back to previous stage)
+	
+	git log								\\VIEW COMMIT HISTORY
+	git log --oneline 						\\VIEW COMMIT HISTORY IN ONE LINE
+		
+
+	git checkout <ID FROM git log --oneline>	   		\\GO BACK TO PREVIOUS STAGE OR PREVIOUS COMMIT
+
+
+	AND
+	
+	#)IF YOU AGAIN WNAT TO GO TO THE NEWEST OR LATEST COMMIT OR STAGE
+	
+	git checkout <main/master>
