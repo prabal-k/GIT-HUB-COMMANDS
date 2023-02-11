@@ -1,47 +1,71 @@
 1)GIT COMMANDS FOR PUSH
 
-	git init                     					\\GIT INITIALIZE
-	git add .								\\To TAKE THE FILE TO STAGING AREA
+	=> git init                     					\\GIT INITIALIZE
+	=> git add .								\\To TAKE THE FILE TO STAGING AREA
 
-	(git rm --cached <filename>)					\\TO UNSELECT A PARTICULAR FILE TO UNSTAGE
+	=> (git rm --cached <filename>)					\\TO UNSELECT A PARTICULAR FILE TO UNSTAGE
 
-	git commit -m "msg"						\\TO MAKE READY FOR COMMIT
+	=> git commit -m "msg"						\\TO MAKE READY FOR COMMIT
 
-	(git branch -M <main/master>)					\\ TO SHIFT FROM ONE BRANCH TO ANOTHER BRANCH
+	=> (git branch -M <main/master>)					\\ TO SHIFT FROM ONE BRANCH TO ANOTHER BRANCH
 
-	git remote add origin <link>
+	=> git remote add origin <link>
 	
-	git push origin master						\\ TO PUSH THE FILE TO GITHUB AT LOCATION MASTER
+	=> git push origin master						\\ TO PUSH THE FILE TO GITHUB AT LOCATION MASTER
 
 
 2) GIT COMMAND FOR PULL OR TO ADD FROM REMOTE 
 
-	git clone <url>							\\TO PULL FROM REMOTE ORIGIN TO LAPTOP
+	=> git clone <url>							\\TO PULL FROM REMOTE ORIGIN TO LAPTOP
 
 
 
 3)FOR GIT CONFIGURATION
 
-	git config --list
+	=> git config --list
 
-	git config --global user.email "Email"
-	git config --global user.name "username"
+	=> git config --global user.email "Email"
+	=> git config --global user.name "username"
 
 3)VIEW COMMIT HISTORY AND GO BACK TO PREVIOUS COMMIT (used to go back to previous stage)
 	
-	git log								\\VIEW COMMIT HISTORY
-	git log --oneline 						\\VIEW COMMIT HISTORY IN ONE LINE
+	=> git log								\\VIEW COMMIT HISTORY
+	=> git log --oneline 						\\VIEW COMMIT HISTORY IN ONE LINE
 		
 
-	git checkout <ID FROM git log --oneline>	   		\\GO BACK TO PREVIOUS STAGE OR PREVIOUS COMMIT
+	=> git checkout <ID FROM git log --oneline>	   		\\GO BACK TO PREVIOUS STAGE OR PREVIOUS COMMIT
 
 
 	AND
 	
-	#)IF YOU AGAIN WNAT TO GO TO THE NEWEST OR LATEST COMMIT OR STAGE
+	#)IF YOU AGAIN WANT TO GO TO THE NEWEST OR LATEST COMMIT OR STAGE
 	
-	git checkout <main/master>
+	=> git checkout <main/master>
 
+4)FOR WORKING IN GROUP PROJECT FIRST CLONE THEN CREATE A NEW BRANCH AND THEN WORK IN NEW BRANCH AND PUSH IT AS:
 
+	=> git branch <branch name>					\\TO CREATE A NEW BRANCH 
+	=> git branch							\\TO CHECK IN WHICH BRANCH WE ARE
+	=> git checkout <branch name>					\\TO SHIFT TO THE PARTICULAR BRANCH
 
-	--------------------------
+		THEN WORK IN THE NEW BRANCH AND THEN
+		=> (git add . and git commit -m "" )
+	
+	AT LAST WE HAVE TO MERGE THE TWO BRANCH (THE MAIN BRANCH (SUPPOSE AS MASTER) AND THE BRANCH 
+	WE CREATED AND WORKED IN IT (SUPPOSE THE BRANCH NAME IS MULTIPLICATION))
+	
+	TO MERGE WE SHOULD BE IN THE BRANCH IN WHICH WE WANT TO MERGE (FOR THIS EXAMPLE IN MASTER BRANCH)
+
+	=> git checkout master		
+	=> git merge <new branch name> (i.e git merge mutiplication)	\\THIS MERGE THE MULTIPLICATION BRANCH 
+													IN MAIN BRANCH
+
+	THEN AFTER MERGING PUSH IT TO THE REMOTE ORIGIN AS
+		=> (git push origin master)
+
+		=> git branch -d <branch name> 			\\TO DELETE THE BRANCH CRETAED( d means it doesnot
+										\\ delete the branch that is not merged and D means
+										\\ it deletes the brach even if it is merged or not)
+	
+
+	---------------------------------------------------------------------------------------------
