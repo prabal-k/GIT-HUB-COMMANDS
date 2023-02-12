@@ -84,6 +84,21 @@
 	=>git branch --no-merged					\\TO CHECK WHICH BRANCHS ARE LEFT TO MERGE
 
 	=>git remote show origin 					\\THIS LIST ALL THE BRANCH THAT IS IN REMOTE REPOSITORY
+
+
+
+6)TO CREATE A GITIGNORE FILE 
+		
+		FIRST CREATE A FILE NAMED AS .gitignore ..THEN INSIDE THE .gitignore FILE LIST THE FOLDERS OR FILE 
+		YOU WANT NOT TO SEND IN REMOTE REPOSITORY OR HIDE (for eg you want to ignore a folder named as test
+		then inside .gitignore file write
+						test/      			\\(ignore test file)		
+		the it will ignore the file test then you can add commit and push other file to remote repository)
+		SOME OTHER EXAMPLES:
+			
+				*.env 					\\ignore all .env file
+				!hello.env 					\\ignore env files except hello file(i.e add hello to remote repository)
+
 	-----------------------------------------------------------------------------------------------------------
 
 
