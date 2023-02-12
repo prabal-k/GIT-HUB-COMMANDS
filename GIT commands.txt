@@ -77,6 +77,13 @@
 										\\ it deletes the brach even if it is merged or not)
 	
 
+5)TO CHECK WHICH BRANCHS ARE MERGED AND WHICH BRANCHS ARNENOT MERGED
+
+	=>git branch --merged						\\TO CHECK WHICH BRANCHS ARE MERGED TOGETHER
+
+	=>git branch --no-merged					\\TO CHECK WHICH BRANCHS ARE LEFT TO MERGE
+
+	=>git remote show origin 					\\THIS LIST ALL THE BRANCH THAT IS IN REMOTE REPOSITORY
 	-----------------------------------------------------------------------------------------------------------
 
 
