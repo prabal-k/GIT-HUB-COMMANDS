@@ -61,6 +61,13 @@
 	=> git checkout master		
 	=> git merge <new branch name> (i.e git merge mutiplication)	\\THIS MERGE THE MULTIPLICATION BRANCH 
 													IN MAIN BRANCH
+		
+		
+		=> (git diff)
+		=> (git megre --no-ff <branch name>) 				\\THIS WILL CREATE TWO SEPERATE VALUE
+												\\ FOR MERGING(press i to write and 
+												\\press esc and :wq to write and exit)
+
 
 	THEN AFTER MERGING PUSH IT TO THE REMOTE ORIGIN AS
 		=> (git push origin master)
@@ -70,4 +77,6 @@
 										\\ it deletes the brach even if it is merged or not)
 	
 
-	------------------------------------------------------------------------------------------------------------------
+	-----------------------------------------------------------------------------------------------------------
+
+
